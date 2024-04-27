@@ -3,12 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - moneda
+  - enemigo
+  - cofre
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Suelo
   - Water
   - UI
   - 
@@ -40,4 +43,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 3400594153
+    locked: 0
+  - name: Suelo
+    uniqueID: 3701376941
+    locked: 0
+  - name: Enemigo
+    uniqueID: 2860143367
+    locked: 0
+  - name: Jugador
+    uniqueID: 2119683769
     locked: 0
