@@ -13,7 +13,7 @@ public class playerController : MonoBehaviour
     public int contadorMonedas = 0;
     public TextMeshProUGUI monedas;
     private Rigidbody2D rb2D;
-    //private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +54,7 @@ public class playerController : MonoBehaviour
         float movVertical = Input.GetAxis("Vertical");
 
         Vector3 movimiento = new Vector2(movHorizontal, movVertical);
-        //animator.SetBool
+
         if (tipoMovimiento == 1)
         {
             transform.Translate(movimiento * velMovimiento * Time.deltaTime);
@@ -84,8 +84,11 @@ public class playerController : MonoBehaviour
         if (collision.CompareTag("moneda"))
         {
             contadorMonedas++;
+<<<<<<< HEAD:Assets/playerController.cs
             monedas.text = contadorMonedas+"";
             //Debug.Log("+1 Moneda - Total: " + contadorMonedas);
+=======
+>>>>>>> c6a40aaf5bee76b54f2b0ffa6d198982a682d335:Assets/Scripts/playerController.cs
             collision.gameObject.SetActive(false);
             
         }
