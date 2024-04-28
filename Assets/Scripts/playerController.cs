@@ -61,24 +61,19 @@ public class playerController : MonoBehaviour
         {
             rb2D.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
             animator.SetBool("enElSuelo", false);
-            animator.SetBool("saltando",true);
         }
         if (rb2D.velocity.y > 0.1)
         {
             animator.SetInteger("estado", 2);
         }
-        if (rb2D.velocity.y < -0.1)
-        {
-            animator.SetInteger("estado", 3);
-        }
+
     }
 
     bool tocandoSuelo()
     {
         RaycastHit2D rh = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x, boxCollider.bounds.size.y), 0f, Vector2.down, 0.4f, capaSuelo);
         animator.SetBool("enElSuelo", true);
-        animator.SetBool("saltando", false);
-        //animator.SetInteger("estado", 0);
+        animator.SetInteger("estado", 0);
         return rh.collider != null;
     }
 

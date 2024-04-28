@@ -7,6 +7,8 @@ TagManager:
   - moneda
   - enemigo
   - cofre
+  - gameover
+  - agua
   layers:
   - Default
   - TransparentFX
@@ -53,6 +55,12 @@ TagManager:
   - name: Enemigo
     uniqueID: 2860143367
     locked: 0
+  - name: interactuable
+    uniqueID: 4026807865
+    locked: 0
   - name: Jugador
     uniqueID: 2119683769
+    locked: 0
+  - name: agua
+    uniqueID: 1358407473
     locked: 0
